@@ -1,19 +1,133 @@
-.App {
-  text-align: center;
+body .container-fluid, body .navbar-header {
+  max-width: 1300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 992px) {
+  body .navbar-header {
+    padding: 0;
   }
 }
 
-.App-header {
+@media (min-width: 1200px) {
+  body .container-fluid {
+    max-width: 85%;
+  }
+}
+
+body #layout-wrapper {
+  box-shadow: none;
+  background-color: #f4f8f9;
+  margin: 0 auto;
+}
+
+body #page-topbar, body #layout-wrapper, body .footer {
+  max-width: 100%;
+}
+
+body .navbar-brand-box {
+  width: auto;
+  float: left;
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+@media (max-width: 992px) {
+  .logo span.logo-sm {
+    display: inline-block;
+  }
+}
+
+.logo .logo-sm {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .logo span.logo-lg {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .topnav .dropdown .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+}
+
+@media (min-width: 992px) {
+  .topnav .dropdown-item {
+    padding: .7rem 1.5rem;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-sampul {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-gambar {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wraper-img-new {
+    height: 190px;
+  }
+}
+
+@media (min-width: 992px) {
+  .posted-new {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .list-icon {
+    font-size: 27pt;
+  }
+}
+
+body .main-content {
+  margin-left: 0 !important;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +149,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
